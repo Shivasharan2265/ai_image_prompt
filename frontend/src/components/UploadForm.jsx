@@ -28,7 +28,7 @@ export default function UploadForm({ setResults, setImagesPreview }) {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://192.168.1.10:5000/api/images/process", formData);
+      const res = await axios.post("https://ai-image-prompt.onrender.com/api/images/process", formData);
       setResults(res.data.results);
       setSelectedFiles([]);
       setImagesPreview([]);
