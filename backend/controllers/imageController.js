@@ -65,7 +65,7 @@ export const processImages = async (req, res) => {
         fs.writeFileSync(tempPath, imageBuffer);
         
         // Return URL instead of base64
-        const imageUrl = `https://ai-image-prompt-1.onrender.com/${tempFilename}`;
+        const imageUrl = `https://ai-image-prompt-1.onrender.com/temp_images/${tempFilename}`;
         
         results.push({
           type: "image",
