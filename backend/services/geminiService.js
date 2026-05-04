@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import fs from "fs";
 
-const genAI = new GoogleGenerativeAI('AIzaSyDS9gqkubZirqr5ztHaD_93ZInWWoI6oIg');
+const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 
 export const processWithGemini = async (filePath, prompt) => {
   const model = genAI.getGenerativeModel({ 
