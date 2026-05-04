@@ -1,0 +1,109 @@
+.gallery {
+  margin-top: 20px;
+}
+
+.gallery-controls {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.format-select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.bulk-download-btn {
+  padding: 8px 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.bulk-download-btn:hover {
+  background: #218838;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.gallery-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-footer {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  background: #f8f9fa;
+}
+
+.download-btn {
+  flex: 1;
+  padding: 8px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.download-btn:hover {
+  background: #0056b3;
+}
+
+.download-btn.webp {
+  background: #ff9800;
+}
+
+.download-btn.webp:hover {
+  background: #e68900;
+}
+
+.text-result {
+  padding: 20px;
+  background: #f8f9fa;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-result p {
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+}
